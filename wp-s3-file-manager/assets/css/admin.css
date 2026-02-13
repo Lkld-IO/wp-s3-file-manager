@@ -1,0 +1,191 @@
+/**
+ * WP S3 File Manager - Admin Styles
+ */
+
+.wps3fm-wrap {
+  max-width: 1200px;
+}
+
+/* Upload area */
+.wps3fm-upload-section {
+  margin: 20px 0;
+}
+
+.wps3fm-upload-area {
+  border: 2px dashed #c3c4c7;
+  border-radius: 4px;
+  padding: 40px;
+  text-align: center;
+  background: #f6f7f7;
+  transition: border-color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.wps3fm-upload-area:hover,
+.wps3fm-upload-area.wps3fm-drag-over {
+  border-color: #2271b1;
+  background: #f0f6fc;
+}
+
+.wps3fm-upload-area p {
+  font-size: 14px;
+  color: #646970;
+  margin-bottom: 15px;
+}
+
+/* Progress bar */
+.wps3fm-upload-progress {
+  margin-top: 15px;
+}
+
+.wps3fm-progress-bar {
+  width: 100%;
+  height: 24px;
+  background: #dcdcde;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.wps3fm-progress-fill {
+  height: 100%;
+  background: #2271b1;
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+.wps3fm-progress-text {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #50575e;
+}
+
+/* Files table */
+.wps3fm-files-section {
+  margin-top: 30px;
+}
+
+.wps3fm-files-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.wps3fm-files-header h2 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+#wps3fm-sync-files {
+  background: #f0f0f1;
+  border-color: #0073aa;
+  color: #0073aa;
+}
+
+#wps3fm-sync-files:hover:not(:disabled) {
+  background: #0073aa;
+  color: white;
+}
+
+#wps3fm-sync-files:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wps3fm-url-text {
+  font-size: 12px;
+  word-break: break-all;
+  display: inline-block;
+  max-width: 300px;
+  vertical-align: middle;
+}
+
+.wps3fm-copy-url {
+  vertical-align: middle !important;
+  margin-left: 5px !important;
+}
+
+/* Auth toggle */
+.wps3fm-toggle {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.wps3fm-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.wps3fm-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.wps3fm-toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.wps3fm-toggle input:checked + .wps3fm-toggle-slider {
+  background-color: #2271b1;
+}
+
+.wps3fm-toggle input:checked + .wps3fm-toggle-slider::before {
+  transform: translateX(16px);
+}
+
+/* Column widths */
+.column-name {
+  width: 18%;
+}
+
+.column-size {
+  width: 8%;
+}
+
+.column-type {
+  width: 10%;
+}
+
+.column-url {
+  width: 28%;
+}
+
+.column-auth {
+  width: 10%;
+}
+
+.column-uploaded {
+  width: 13%;
+}
+
+.column-actions {
+  width: 10%;
+}
+
+/* Upload disabled warning */
+.wps3fm-upload-disabled-notice {
+  margin: 10px 0 0;
+}
+
+/* Notices */
+.wps3fm-notice {
+  margin-top: 10px;
+}
